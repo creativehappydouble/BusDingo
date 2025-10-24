@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">BusDingo</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+
+
+
+        <!-- Home screen -->
+        <string name="hint_stop_code">Stop code (e.g. 53088)</string>
+        <string name="hint_line">Line (e.g. 60)</string>
+        <string name="btn_fetch_eta">Fetch ETA</string>
+
+        <!-- runtime messages -->
+        <string name="msg_input_required">Please enter both stop code and line.</string>
+        <string name="msg_api_key_missing">API key is not configured. Check BuildConfig.METRO_API_KEY.</string>
+        <string name="msg_loading">Loading…</string>
+        <string name="msg_no_services">No upcoming services for this stop/line (possibly out of service now).</string>
+        <string name="msg_failure">Sorry, error</string>
+
+
+        <string name="label_line">Line</string>
+        <string name="label_stop">Stop</string>
+        <string name="label_dest">Destination</string>
+        <string name="label_eta">ETA (min)</string>
+        <string name="label_expected_arrival">Expected Arrival</string>
+
+    <string name="result_template">
+        Line: %1$s\n
+        Stop: %2$s\n
+        Destination: %3$s\n
+        ETA (min): %4$s\n
+        Expected Arrival: %5$s
+    </string>
+
+
+
+
+</resources>

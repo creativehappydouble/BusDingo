@@ -1,0 +1,4 @@
+curl https://apis.metroinfo.co.nz/rti/gtfs/v1/gtfs.zip?subscription-key=225e7c2db6db44ba94b300510e16a0ee --output static_gtfs.zip
+
+https://apis.metroinfo.co.nz/rti/siri/v1/sm[?stopname][&stopcode][&orderby]
+	curl "https://apis.metroinfo.co.nz/rti/siri/v1/sm?stopcode=53088&subscription-key=243fa4a8ad334ca69a894f91df6bc654" --output example.json

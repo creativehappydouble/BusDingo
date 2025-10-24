@@ -1,0 +1,53 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "GTFS Static Service",
+        "version": "v1",
+        "description": "Service interface for General Transit Feed Specification (GTFS) Static feed.\nRefer: https://developers.google.com/transit/gtfs"
+    },
+    "host": "apis.metroinfo.co.nz",
+    "basePath": "/rti/gtfs/v1",
+    "schemes": [
+        "https"
+    ],
+    "securityDefinitions": {
+        "apiKeyHeader": {
+            "type": "apiKey",
+            "name": "Ocp-Apim-Subscription-Key",
+            "in": "header"
+        },
+        "apiKeyQuery": {
+            "type": "apiKey",
+            "name": "subscription-key",
+            "in": "query"
+        }
+    },
+    "security": [
+        {
+            "apiKeyHeader": []
+        },
+        {
+            "apiKeyQuery": []
+        }
+    ],
+    "paths": {
+        "/gtfs.zip": {
+            "get": {
+                "description": "Exports all General Transit Feed Specification (GTFS) Static data as a zip file.\nRefer: https://developers.google.com/transit/gtfs/reference",
+                "operationId": "gtfs",
+                "summary": "GTFS",
+                "tags": [
+                    "GTFS",
+                    "Metroinfo",
+                    "RTI"
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    },
+    "tags": []
+}
